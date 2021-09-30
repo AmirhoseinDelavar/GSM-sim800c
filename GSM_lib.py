@@ -2,7 +2,7 @@ import serial
 import time
 
 ser = serial.Serial('COM8', baudrate=9600, timeout=.1, rtscts=0)
-PhoneNo = "+989120627826"
+PhoneNo = "+98-------"
 Message = "test"
 
 
@@ -94,12 +94,12 @@ def receiver_sms():
             time.sleep(0.15)
 
             # add to db
-            add_msg_db(phonenum, msg_body)
+            #add_msg_db(phonenum, msg_body)
 
 
 # add 'msg' from 'contact' to database
-def add_msg_db(phonenum, msg_body):
-    pass
+#def add_msg_db(phonenum, msg_body):
+#    pass
 
 
-receiver_sms()
+#receiver_sms()
